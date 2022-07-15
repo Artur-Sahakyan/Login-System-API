@@ -1,12 +1,13 @@
-import "./register.css"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-function Register (){
+function SingIn (){
+
     return (
         <div className="form"  >
+            <h1>Sing In</h1>
             <form>
             <div className="input-container" >
-                <label Link to={"/homee"} >Username </label>
+                <label> Username </label>
                 <input type="text" name="uname" id="username" /> 
 
             </div>
@@ -17,7 +18,7 @@ function Register (){
             </div>
             <div className="button-container">
                 
-                <Link to={"about"} >
+                <Link to={"/singIn/getweather"} >
                     <input type="submit" />
                 </Link>
             </div>
@@ -26,4 +27,4 @@ function Register (){
     )
 }
 
-export default Register;
+export default SingIn;
