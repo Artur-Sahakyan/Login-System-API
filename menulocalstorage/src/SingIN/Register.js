@@ -1,4 +1,5 @@
 import "./register.css"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Register (){
     return (
@@ -6,9 +7,8 @@ function Register (){
             <form>
             <div className="input-container" >
                 <label Link to={"/homee"} >Username </label>
-                <input type="text" name="uname" id="username" />
-                {/* <li><Link to={"/home"}></Link>Home</li> */}
-                
+                <input type="text" name="uname" id="username" /> 
+
             </div>
             <div className="input-container">
                 <label>Password </label>
@@ -16,7 +16,10 @@ function Register (){
                 
             </div>
             <div className="button-container">
-                <input type="submit" />
+                
+                <Link to={"about"} >
+                    <input type="submit" />
+                </Link>
             </div>
             </form>
         </div>
